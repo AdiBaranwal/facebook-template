@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link rel="icon" href="fb-icon.png">
+        <link rel="stylesheet" href="main3.css">
+        <title>Facebook - log in or sign up</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="all-container">
+            <div class="first-container">
+                <div class="header">
+                    <div class="facebook-logo">
+                        <a class="link" href="#">
+                            <p class="facebook">facebook</p>
+                        </a>
+                    </div>
+                    <div class="login-container">
+                        <div class="login-one">
+                            <label class="login-headings phone">Email or Phone</label>
+                            <label class="login-headings">Password</label>
+                        </div>
+                        <div class="login-two">
+                            <form class="">
+                                <input class="login-input" type="text" name="userId">
+                                <input class="login-input" type="password" name="password">
+                                <button class="btn">Log In</button>
+                            </form>
+                        </div>
+                        <div class="login-three">
+                            <a href="#" class="forgot"><p class="forgot-password">Forgotten Account?</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-container">
+                <div class="connect">
+                    <div class="connect-heading">
+                        <p>Facebook helps you connect and share with the </p>
+                        <p>people in your life.</p>
+                    </div>
+                    <div class="connect-image">
+                        <img class="image" src="connecting.png">
+                    </div>
+                </div>
+                <div class="signup-container">
+                    <p class="create">Create an account</p>
+                    <p class="free">It's free and always will be.</p>
+                    <form action="/abc.php" onsubmit="return temp(event)" method="POST">
+                        <input class="signup-input" id="fname" type="text"  placeholder="First name" name="fname" onblur="checkfn()">
+                        <input class="signup-input" id="lname" type="text"  placeholder="Second name" name="lname" onblur="checkln()"><br>
+                        <input class="signup-input" id="userId" type="text"  placeholder="Mobile number or email address" name="userId" onblur="checkuid()"><br>
+                        <input class="signup-input" id="password" type="password"  placeholder="Password" name="password" onblur="checkp()"><br>
+                        <p class="birthday">Birthday</p>
+                        <select class="DOB" name="date">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="81">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21" selected>21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select class="DOB" name="month">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun" selected>Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                        <select class="DOB" name="year">
+                            <option value="2019" selected>2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select><br>
+                        <p class="Gender">Gender</p>
+                        <!-- <span id="border"> -->
+                            <div class="radio-container">
+                                <div class="radio-box">
+                                    <input id="radio" type="radio" name="gender" value="female" />
+                                    <label class="gender-type">Female</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input id="radio" type="radio" name="gender" value="male" />
+                                    <label class="gender-type">Male</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input id="radio" type="radio" name="gender" value="custom" />
+                                    <label class="gender-type">Custom</label>
+                                </div>
+                            </div>
+                        <!-- </span> -->
+                        <div class="policy">By clicking Sign Up, you agree to our <a class="terms" href="#">Terms</a>, <a class="terms" href="#">Data Policy</a> and <a class="terms" href="#">Cookie</a> Policy. You may receive SMS notifications from us and can opt out at any time</div>
+                        <button type="submit" class="sign-up">Sign Up</button>
+                        <!-- onclick="check(event)" -->
+                    </form>
+                    <p class="create-page"><a class="terms" href="#">Create a Page</a> for a celebrity, band or business</p>
+                </div>
+            </div>
+            <div class="third-container">
+                <div class=language-container>
+                    <label class="eng">English (UK)</label>
+                    <a class="languages" href="#hindi">हिन्दी</a>
+                    <a class="languages" href="#">ਪੰਜਾਬੀ</a>
+                    <a class="languages" href="#">اردو</a>
+                    <a class="languages" href="#">தமிழ்</a>
+                    <a class="languages" href="#">বাংলা</a>
+                    <a class="languages" href="#">मराठी</a>
+                    <a class="languages" href="#">తెలుగు</a>
+                    <a class="languages" href="#">ગુજરાતી</a>
+                    <a class="languages" href="#">ಕನ್ನಡ</a>
+                    <a class="languages" href="#">മലയാളം</a>
+                    <button class="plus">+</button>      
+                </div>
+                <div class="other-features">
+                    <a class="feature" href="#">Sign Up</a>
+                    <a class="feature" href="#">Log In</a>
+                    <a class="feature" href="#">Messenger</a>
+                    <a class="feature" href="#">Facebook Lite</a>
+                    <a class="feature" href="#">Watch</a>
+                    <a class="feature" href="#">People</a>
+                    <a class="feature" href="#">Profiles</a>
+                    <a class="feature" href="#">Pages</a>
+                    <a class="feature" href="#">Page Categories</a>
+                    <a class="feature" href="#">Events</a>
+                    <a class="feature" href="#">Places</a>
+                    <a class="feature" href="#">Games</a>
+                    <a class="feature" href="#">Locations</a>
+                    <a class="feature" href="#">Marketplace</a>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="valid.js"></script>
+    </body>
+</html>

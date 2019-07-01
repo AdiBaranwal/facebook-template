@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all-container{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.first-container{
+    width: 100%;
+    height: 85px;
+    background-color:#3b5998;
+}
+.header{
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    /* background-color: rgba(255, 0, 0, 0.233); */
+    display: flex;
+}
+.facebook-logo{
+    position: relative;
+    flex: 1;
+    /* background-color: rgba(40, 252, 13, 0.329); */
+}
+.link{
+    text-decoration: none;
+}
+.facebook{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    margin-top: 18px;
+    position: absolute;
+    bottom: 12px;
+    /* font-weight: bold;  */
+}
+.login-container{
+    flex: 2;
+    /* background-color: rgba(252, 13, 105, 0.425);   */
+    display: flex;
+    flex-direction: column; 
+    text-align: right;
+}
+.login-one{
+       /* height: 35%; */
+       padding-top: 12px;
+    }
+.login-headings{
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    color: whitesmoke;
+    /* padding-top: 30px; */
+    margin-right: 174px;
+}
+.phone{
+    margin-right: 80px;
+}
+.login-two{
+    /* flex: 2; */
+    width: 100%;
+    height: 35%;
+}
+.login-input{
+    width: 150px;
+    height: 23px;
+    margin-right: 15px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-family: 'Hind', sans-serif;
+    padding-left: 5px;
+}
+.btn{
+    border-style: none;
+    border: 1px solid #3f4b81; 
+    border-radius: 2px;
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 23px;
+    color: whitesmoke;
+    background-color:#526cb9b9;
+    margin-right: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #3b5998;
+}
+.login-three{
+    /* flex: 1;     */
+    width: 100%;
+    height: 25%;
+}
+.forgot{
+    text-decoration: none;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.forgot-password{
+    color: white;
+    font-size: 12px;
+    font-family: 'Hind', sans-serif;
+    margin-right: 120px;
+    opacity: 0.5;
+}
+.forgot-password:hover{
+    opacity: 0.7;
+}
+.second-container{
+    width: 100%;
+    height: 78%;
+    background-image: linear-gradient(white, #D3D8E8);   
+    /* background-color:  rgb(198, 203, 216); */
+    display: flex;
+}
+.connect{
+    width: 35%;
+    margin-left: 17vw;
+    /* background-color: rgba(255, 0, 0, 0.363); */
+}
+.connect-heading{
+    margin-top: 45px;
+    margin-left: 10px;
+}
+.connect-heading>p{
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 21px;
+    color: #263a61;
+}
+.image{
+    width: 100%;
+    height:auto;
+}
+.signup-container{
+    margin-left: 4vw;
+}
+.create{
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 37px;
+    color: rgb(53, 51, 51);
+    margin-top: 25px;
+}
+.free{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(53, 51, 51); 
+    margin: 10px 0;
+}
+.signup-input{
+    padding: 7px 7px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid rgb(164, 180, 245);
+    opacity: 0.6;
+    color: black;
+}
+#fname{
+    width: 180px;
+    margin-top: 15px;
+}
+#lname{
+    margin-left: 5px;
+    width: 180px;
+}
+#userId{
+    margin-top: 9px;
+    width: 370px;
+}
+#password{
+    margin-top: 9px;
+    width: 370px;
+}
+.birthday{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    opacity: 0.4;
+    margin-top: 15px;   
+}
+.DOB{
+    margin-top: 9px;
+    padding: 5px 7px;
+}
+.Gender{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    opacity: 0.4;
+    margin-top: 15px;  
+}
+.gender-type{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 5px;
+}
+#radio{
+    margin-top: 12px;
+    margin-left: 10px;
+    border: 1px solid red;
+}
+.policy{
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 11px;   
+    width: 300px;
+    color: #6d6969;
+}
+.terms{
+    text-decoration: none;
+    color: #365ead;
+}
+.terms:hover{
+    text-decoration: underline;
+    color: #3f5e9c;
+}
+.sign-up{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-top: 15px; 
+
+    background: linear-gradient(#67ae55, #578843);
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-radius: 6px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    border: 1px solid black;
+    /* 
+    border: 1px solid black;
+    background-color: rgba(21, 116, 37, 0.884);   */
+}
+.sign-up:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.create-page{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #868080;
+    font-size: 14px;
+    margin-top: 30px;    
+}
+/* .third-container{
+    text-align: center;
+    margin: auto;
+} */
+.language-container
+{
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-left: 17vw;
+    margin-top: 15px;
+}
+.languages{
+    text-decoration: none;
+    color: #365ead;
+    margin: 0 5px;
+}
+.languages:hover{
+    text-decoration: underline;
+    color: #3f5e9c;
+}
+.eng{
+    color: #727375;
+    margin: 0 5px;
+}
+.plus{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; 
+    opacity: 0.7;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.other-features{
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-left: 17vw;
+    margin-top: 20px;
+}
+.feature{
+    text-decoration: none;
+    color: #365ead;
+    margin: 0 7px;
+}
+.feature:hover{
+    text-decoration: underline;
+    color: #3f5e9c; 
+}
+
+.defective-field {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.radio-box {
+    display: inline-block;
+}
